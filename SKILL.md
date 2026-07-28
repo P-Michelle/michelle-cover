@@ -1,5 +1,5 @@
 ---
-name: ai-blogger-cover
+name: michelle-cover
 description: 生成高点击率的小红书 / 知识博主视频封面（YouTube Thumbnail 风格）。基于用户提供的真人照片做图生图：真人 IP 放右侧、超大标题占左侧、奶油黄重点词、白字黑描边、自然办公背景、不过度美颜。当用户要做「封面 / 缩略图 / thumbnail / 小红书知识博主封面 / AI 博主封面」时使用。
 ---
 

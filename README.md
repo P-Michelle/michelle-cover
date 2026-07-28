@@ -10,22 +10,22 @@
 
 ## 安装
 
-这是标准 Agent Skill，把 `ai-blogger-cover` 目录放到对应位置即可：
+这是标准 Agent Skill，把 `michelle-cover` 目录放到对应位置即可：
 
-- **Claude Code**：复制到 `~/.claude/skills/ai-blogger-cover`
-- **Codex**：复制到 `~/.codex/skills/ai-blogger-cover`
-- **通用 Agent（豆包 / Trae 等）**：复制到 `~/.agents/skills/ai-blogger-cover`
+- **Claude Code**：复制到 `~/.claude/skills/michelle-cover`
+- **Codex**：复制到 `~/.codex/skills/michelle-cover`
+- **通用 Agent（豆包 / Trae 等）**：复制到 `~/.agents/skills/michelle-cover`
 
 ```bash
-git clone https://github.com/<your-name>/ai-blogger-cover.git
-cp -r ai-blogger-cover ~/.claude/skills/
+git clone https://github.com/P-Michelle/michelle-cover.git
+cp -r michelle-cover ~/.claude/skills/
 ```
 
 ## 使用
 
 1. 准备一张你的**人像照片**（真人 IP，用于做图生图）。
 2. 想好**标题文字**（2–4 行，含 1 个重点词 + 1 个数字）。
-3. 对 Agent 说：「用 ai-blogger-cover 帮我做张封面，标题是 XXX」，并附上人像照片。
+3. 对 Agent 说：「用 michelle-cover 帮我做张封面，标题是 XXX」，并附上人像照片。
 4. Agent 会套用主提示词 + 你的照片做图生图，出图后按自检清单校验。
 
 标题示例：
