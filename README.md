@@ -6,7 +6,16 @@
 
 ## 效果示例
 
-> 把你的封面成品图放进 `assets/` 目录，并在这里贴几张，别人一眼就懂风格。
+以下封面均由本 Skill 的公式生成——真人 IP（右侧）＋ 超大标题（左侧）＋ 奶油黄重点词 ＋ 橙色数字 ＋ 自然背景：
+
+<table>
+  <tr>
+    <td width="25%"><img src="assets/cover-01.jpg" alt="文科生转行AI，这个岗位有壁垒"></td>
+    <td width="25%"><img src="assets/cover-02.jpg" alt="To B 领域，文科生转行 AI 岗位天花板"></td>
+    <td width="25%"><img src="assets/cover-03.jpg" alt="24 小时内找到真正适合你的 AI 转行赛道"></td>
+    <td width="25%"><img src="assets/cover-04.jpg" alt="AI 是文科生最大的时代红利"></td>
+  </tr>
+</table>
 
 ## 安装
 
