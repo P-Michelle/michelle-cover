@@ -1,6 +1,6 @@
 # AI 知识博主封面 Skill
 
-一套把「真人照片 → 高点击率封面」标准化的 Agent Skill。风格是 **YouTube Thumbnail × 小红书爆款知识博主封面** 的融合：真人 IP 放右侧、超大标题占左侧、奶油黄重点词、白字黑描边、自然办公背景、不过度美颜。
+一套把「真人照片 → 高点击率封面」标准化的 **Codex Skill**。风格是 **YouTube Thumbnail × 小红书爆款知识博主封面** 的融合：真人 IP 放右侧、超大标题占左侧、奶油黄重点词、白字黑描边、自然办公背景、不过度美颜。
 
 核心不是设计感，是**点击率**——在小红书两列信息流的缩略图尺寸下，用户 1 秒内要能看清标题、认出人物、判断主题。
 
@@ -19,23 +19,32 @@
 
 ## 安装
 
-这是标准 Agent Skill，把 `michelle-cover` 目录放到对应位置即可：
-
-- **Claude Code**：复制到 `~/.claude/skills/michelle-cover`
-- **Codex**：复制到 `~/.codex/skills/michelle-cover`
-- **通用 Agent（豆包 / Trae 等）**：复制到 `~/.agents/skills/michelle-cover`
+把 `michelle-cover` 目录复制到 Codex 的 skills 目录即可：
 
 ```bash
 git clone https://github.com/P-Michelle/michelle-cover.git
-cp -r michelle-cover ~/.claude/skills/
+cp -r michelle-cover ~/.codex/skills/
 ```
+
+复制完成后重启 Codex 会话（或新开一个），才能加载到 `SKILL.md`。
+
+## 更新
+
+以后仓库有更新，直接在 skill 目录里拉取最新版即可：
+
+```bash
+cd ~/.codex/skills/michelle-cover
+git pull origin main
+```
+
+同样需要重启 Codex 会话才能生效。
 
 ## 使用
 
 1. 准备一张你的**人像照片**（真人 IP，用于做图生图）。
 2. 想好**标题文字**（2–4 行，含 1 个重点词 + 1 个数字）。
-3. 对 Agent 说：「用 michelle-cover 帮我做张封面，标题是 XXX」，并附上人像照片。
-4. Agent 会套用主提示词 + 你的照片做图生图，出图后按自检清单校验。
+3. 对 Codex 说：「用 michelle-cover 帮我做张封面，标题是 XXX」，并附上人像照片。
+4. Codex 会先和你确认表情情绪基调，再套用主提示词 + 你的照片调用图生图模型，出图后按自检清单校验、交给你挑选最终版本。
 
 标题示例：
 
